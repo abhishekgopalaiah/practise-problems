@@ -13,6 +13,7 @@ def append(head3,new_data):
         last = last.next
     last.next =  new_node 
 
+
 def mergeLists(head1, head2):
     head3 = Node(1)
     while head1 or head2:
