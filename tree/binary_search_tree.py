@@ -56,3 +56,4 @@ arr = [1, 2, 5, 3, 6, 4]
 
 for i in range(t):
     tree.create(arr[i])
+
