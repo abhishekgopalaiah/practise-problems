@@ -46,3 +46,5 @@ if __name__ == '__main__':
     oranges = list(map(int, input().rstrip().split()))
 
     countApplesAndOranges(s, t, a, b, apples, oranges)
+print [ [ i, j, k] for i in range( x + 1) for j in range( y + 1) for k in range( z + 1) if i + j +k != n ]
+print[[a, b, c] for a in range(x + 1) for b in range(y+1) for c in range(z+1) if a+b+c != n]
