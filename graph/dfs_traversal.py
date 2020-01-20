@@ -30,7 +30,7 @@ class Graph:
         # Recur for all the vertices
         # adjacent to this vertex
         for i in self.graph[v]:
-            if visited[i] == False:
+            if not visited[i]:
                 self.DFSUtil(i, visited)
 
                 # The function to do DFS traversal. It uses
