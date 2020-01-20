@@ -1,18 +1,5 @@
 #!/bin/python3
-"""
-Input (stdin)
-Download
-7 11
-5 15
-3 2
--2 2 1
-5 -6
 
-Expected Output
-
-1
-1
-"""
 import math
 import os
 import random
@@ -27,10 +14,10 @@ def countApplesAndOranges(s, t, a, b, apples, oranges):
     oranges_list = [(i+b) for i in oranges]
 
     for i in apples_list:
-        if i in range(s,t):
+        if i in range(s,t+1):
             apple_count +=1
     for i in oranges_list:
-        if i in range(s,t):
+        if i in range(s,t+1):
             orange_count +=1
     print(apple_count)
     print(orange_count)
