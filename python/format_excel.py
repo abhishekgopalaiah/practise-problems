@@ -17,4 +17,4 @@ def format_excel(filename):
 
 
 if __name__ == "__main__":
-    format_excel('pathoffile')
+    format_excel('path_of_file')
