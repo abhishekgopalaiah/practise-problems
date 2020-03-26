@@ -64,3 +64,19 @@ SELECT CASE WHEN A + B <= C OR A + C <= B OR B + C <= A THEN 'Not A Triangle'
             ELSE 'Scalene'
         END
 FROM TRIANGLES
+
+
+
+/*
+Generate the following two result sets:
+
+Query an alphabetically ordered list of all names in OCCUPATIONS, immediately followed by the first letter of each profession as a parenthetical (i.e.: enclosed in parentheses). For example: AnActorName(A), ADoctorName(D), AProfessorName(P), and ASingerName(S).
+Query the number of ocurrences of each occupation in OCCUPATIONS. Sort the occurrences in ascending order, and output them in the following format:
+*/
+select concat(Name,'(',Substring(Occupation,1,1),')') as Name
+from occupations
+Order by Name;
+select concat('There are a total of ',' ',count(occupation),' ',lower(occupation),'s.') as total
+from occupations
+group by occupation
+order by total;
