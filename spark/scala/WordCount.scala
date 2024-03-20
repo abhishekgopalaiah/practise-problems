@@ -1,6 +1,6 @@
 import org.apache.spark.sql.SparkSession
 
-object WordCountScala {
+object WordCount{
   def main(args: Array[String]): Unit = {
     // Create SparkSession
     val spark = SparkSession.builder()
