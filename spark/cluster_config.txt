@@ -1,0 +1,19 @@
+cluster config:
+10 nodes
+16 cores per node
+64 GB RAM per node
+ 
+max allowed CPU cores for each executors = 5
+ 
+leave one core per node for yarn deamon process, now the nbr of cores  per node = 16-1 = 15
+ 
+nbr of executors per node =  15/5 = 3
+nbr of executors for 10 node = 3* 10 = 30
+ 
+leave one executor for application mater, so nbr of executors = 30 -1  = 29
+ 
+available memory per executor = 64/3 = 21
+ 
+heap overhead memory = 7% => 7% of 21GB = 3 GB
+ 
+executor memory = 21- 3 = 18GB
