@@ -1,7 +1,7 @@
 --Employees who earn more than their managers
 
-SELECT *
-FROM employees w,
-     employees m
-WHERE w.manager_id = m.emp_id
-  AND w.salary> m.salary;
+SELECT employee.*
+FROM employees AS employee
+JOIN employees AS manager 
+     ON manager.EMPNO = employee.MGR 
+WHERE employee.SAL > manager.SAL 
